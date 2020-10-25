@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\setcounter{secnumdepth}{0} %Cancels the enumerating of sections
+\usepackage[nottoc]{tocbibind} %Adds bibliography to table of contents
+\usepackage[margin=1.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[]{amsmath, amssymb}
+\usepackage[]{parskip}
+\usepackage[]{graphicx}
+\usepackage[]{enumerate}
+\usepackage[]{url}
+\usepackage[]{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{listings}
+\usepackage{apacite}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{physics}
+
+\title{Exercise 5.8.6}
+\author{Jonathan Pilgram}
+\date{\today}
+
+\begin{document}
+\maketitle
+Find the minimisation problem corresponding to: 
+\[
+\frac{\mathrm{d}^4 u}{\mathrm{d}x^4} = f
+\] 
+With boundary conditions: 
+\[
+	u(0) = \frac{\mathrm{d}u}{\mathrm{d}x} (0) = 0, \frac{\mathrm{d}u}{\mathrm{d}x} (1) =0, \frac{\mathrm{d}^3 u}{\mathrm{d}x^3} (1) = 1
+\] 
+Operator is: 
+\[
+L = \frac{\mathrm{d}^4}{\mathrm{d}x^4} 
+\] 
+This operator is clearly linear, self adjoint and positive. Not all boundary conditions are homogeneous so we have to find a function which satisfies the non homogeneous conditions.  
+\[
+w = \frac{1}{24} x^4 
+\] 
+Satisfies the non homogeneous boundary condition. Use:
+\[
+J(u) = \int_{\Omega}^{} \frac{1}{2} (u-w)(Lu+Lw)\mathrm{d}\Omega -  \int_{\Omega}^{}  uf \mathrm{d}\Omega 
+\] 
+To find minimisation problem.
+
+
+\end{document}
