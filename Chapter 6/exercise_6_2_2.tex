@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\setcounter{secnumdepth}{0} %Cancels the enumerating of sections
+\usepackage[nottoc]{tocbibind} %Adds bibliography to table of contents
+\usepackage[margin=1.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[]{amsmath, amssymb}
+\usepackage[]{parskip}
+\usepackage[]{graphicx}
+\usepackage[]{enumerate}
+\usepackage[]{url}
+\usepackage[]{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{listings}
+\usepackage{apacite}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{physics}
+
+\title{Exercise 6.2.2}
+\author{Jonathan Pilgram}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Given the Poisson's equation in one dimension: 
+\[
+	-\frac{\mathrm{d}^2u}{\mathrm{d}x^2} = f(x)
+\] 
+With corresponding minimisation problem: 
+\[
+	J[u] = \int_{0}^{1} \frac{1}{2} ( \frac{\mathrm{d}u}{\mathrm{d}x} )^2-uf \mathrm{d}x
+\] 
+
+After piecewise approximation the above becomes: 
+\[
+	J[u_a] = \sum_{0}^{n} \frac{1}{2} ( \frac{\mathrm{d}u_{a,n}}{\mathrm{d}x} )^2-u_{a,n}f 
+\] 
+As $u_{a,0} = 0$ and  $u_n-u_{n-1} = 0$  (second boundary condition $\frac{\mathrm{d}u}{\mathrm{d}x} (1) =0$) the summation it should remain finite. 
+ 
+
+
+\end{document}
