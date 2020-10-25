@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\setcounter{secnumdepth}{0} %Cancels the enumerating of sections
+\usepackage[nottoc]{tocbibind} %Adds bibliography to table of contents
+\usepackage[margin=1.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[]{amsmath, amssymb}
+\usepackage[]{parskip}
+\usepackage[]{graphicx}
+\usepackage[]{enumerate}
+\usepackage[]{url}
+\usepackage[]{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{listings}
+\usepackage{apacite}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{physics}
+
+\title{}
+\author{}
+\date{\today}
+
+\begin{document}
+\[
+F = 2\pi u \sqrt{ 1+u'^2 } 
+\] 
+Now Euler-Lagrange:
+\[
+\frac{\partial F}{\partial u} - \frac{\partial }{\partial x} \frac{\partial F}{\partial u'} = 0
+\]
+\[
+	2\pi \sqrt{ 1+u'^2 }  - \frac{\partial }{\partial x} 2 \pi u (1+u'^2)^{-\frac{1}{2} }2u'=0
+\] 
+\[
+	2\pi (1+u'^2)^{-\frac{1}{2} } (1+u'^2-\frac{\partial }{\partial x} 2uu')=0
+\] 
+\[
+	2\pi (1+u'^2)^{-\frac{1}{2} }(1-u'^2) =0
+\] 
+
+
+\end{document}

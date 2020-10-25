@@ -6,3 +6,4 @@
 *.fdb_latexmk
 *.dvi
 *.tex.swp
+*.synctex.gz
