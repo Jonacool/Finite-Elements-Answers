@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\setcounter{secnumdepth}{0} %Cancels the enumerating of sections
+\usepackage[nottoc]{tocbibind} %Adds bibliography to table of contents
+\usepackage[margin=1.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[]{amsmath, amssymb}
+\usepackage[]{parskip}
+\usepackage[]{graphicx}
+\usepackage[]{enumerate}
+\usepackage[]{url}
+\usepackage[]{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{listings}
+\usepackage{apacite}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{physics}
+
+\title{Exercise 6.2.1}
+\author{Jonathan Pilgram}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Given the Poisson's equation in one dimension: 
+\[
+	-\frac{\mathrm{d}^2u}{\mathrm{d}x^2} = f(x)
+\] 
+With boundary conditions: 
+\[
+	u(0)=0, \frac{\mathrm{d}u}{\mathrm{d}x} (1) = 0 
+\] 
+Only homogeneous boundary conditions and operator $L=\frac{\mathrm{d}^2}{\mathrm{d}x^2} $, so the corresponding minimisation problem is given by: 
+\[
+	J[u] = \int_{0}^{1} \frac{1}{2} uLu-uf \mathrm{d}x= \int_{0}^{1} \frac{1}{2} ( \frac{\mathrm{d}u}{\mathrm{d}x} )^2-uf \mathrm{d}x
+\] 
+
+
+
+
+\end{document}
