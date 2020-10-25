@@ -22,26 +22,25 @@
 \usepackage{booktabs}
 \usepackage{physics}
 
-\title{}
-\author{}
+\title{Exercise 5.8.4}
+\author{Jonathan Pilgram}
 \date{\today}
 
 \begin{document}
-
-Given: 
+\maketitle
+Given:
 \[
-	\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2} = \div \grad u= f(x,y,z) \text{ in $\Omega$}
+	\frac{\mathrm{d}}{\mathrm{d}x} (p(x)\frac{\mathrm{d}u}{\mathrm{d}x})=f 
 \] 
-Boundary conditions:  
+With boundary conditions: 
 \[
-	u = g \text{ on $\Gamma$ }
+	u(0), u(1)+\frac{\mathrm{d}u}{\mathrm{d}x} (1) = a
 \] 
-Not homogeneous so use $L=\grad^2$. This is clearly a linear and self adjoint operator so check positiveness. 
-\[
-\int_{\Omega}^{} uLu \mathrm{d}\Omega = \int_{\Omega}^{} \grad^2 u^2 \mathrm{d}\Omega \geq 0 
-\] 
+Not homogeneous, so need to find a function which satisfies the boundary conditions. For example $w = -\frac{a}{\pi} \sin (x\pi)$ satisfies both boundary conditions. Now the corresponding minimisation problem is ($L=\frac{\mathrm{d}}{\mathrm{d}x} (p(x)\frac{\mathrm{d}}{\mathrm{d}x}) $):
 
 \[
-J(u) = \int_{\Omega}^{} \frac{1}{2} (u-g)(Lu+Lg)\mathrm{d}\Omega -  \int_{\Omega}^{}  uf \mathrm{d}\Omega = \int_{\Omega}^{} \frac{1}{2} (u-g)(\grad^2u+\grad^2g)\mathrm{d}\Omega -  \int_{\Omega}^{}  \grad^2 u^2 \mathrm{d}\Omega
+J(u) = \int_{\Omega}^{} \frac{1}{2} (u-w)(Lu+Lw)\mathrm{d}\Omega -  \int_{\Omega}^{}  uf \mathrm{d}\Omega  = whatever not gonna write it out
 \] 
+
+
 \end{document}
