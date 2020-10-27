@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\setcounter{secnumdepth}{0} %Cancels the enumerating of sections
+\usepackage[nottoc]{tocbibind} %Adds bibliography to table of contents
+\usepackage[margin=1.1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[]{amsmath, amssymb}
+\usepackage[]{parskip}
+\usepackage[]{graphicx}
+\usepackage[]{enumerate}
+\usepackage[]{url}
+\usepackage[]{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[]{color}
+\usepackage{listings}
+\usepackage{apacite}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{physics}
+
+\title{Exercise 6.2.7}
+\author{Jonathan Pilgram}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Integration rules can be written in the general form of: 
+\[
+	\int_{x_{k-1}}^{x_k} g(x) \mathrm{d}x = \sum_{k=1}^{r} w_k g(v_k)
+\] 
+With $r, w_k, v_k$ the number of quadrature points, the weights and the quadrature points respectively. 
+\\\\
+For the midpoint rule $r=1, w_k = 1, v_k = x_{k-3/2}  $\\
+For the trapezoid rule: $r=2, w_k = \frac{1}{2}, v_k = x_{ k-2 } $ \\
+For Simpson's rule: $r=3, w_k = \frac{4}{6} (\frac{1}{1+(k-2)^2} ) ^2, v_k=x_{ \frac{k}{2} - \frac{3}{2}  } $
+
+\end{document}
